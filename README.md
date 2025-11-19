@@ -1,15 +1,13 @@
 ```mermaid
 flowchart TB
 
-%% ====== STYLE (font, warna netral) ======
-classDef default fill:#ffffff,stroke:#000000,color:#000000,font-size:14px,font-family:"Times New Roman",serif;
+classDef default fill:#ffffff,stroke:#000000,color:#000000,font-size:14px;
 
-%% ====== FAKTOR RISIKO ======
 subgraph FR ["Faktor Risiko pada Pelari"]
-    FR1[Overuse & repetitive strain]
-    FR2[Biomekanik lari buruk]
-    FR3[Muscle fatigue]
-    FR4[Mobilitas terbatas / riwayat cedera]
+  FR1[Overuse & repetitive strain]
+  FR2[Biomekanik lari buruk]
+  FR3[Muscle fatigue]
+  FR4[Mobilitas terbatas / riwayat cedera]
 end
 
 FR1 --> MT[Mikrotrauma berulang]
@@ -17,7 +15,6 @@ FR2 --> MT
 FR3 --> MT
 FR4 --> MT
 
-%% ====== PATOFISIOLOGI ======
 MT --> IC[Iskemia & Energy Crisis]
 
 IC --> ME[Disfungsi motor endplate\n(ACh ↑)]
@@ -28,11 +25,9 @@ ME --> MPS[Myofascial Pain Syndrome\nGastrocnemius]
 SP --> MPS
 TB --> MPS
 
-%% ====== GEJALA ======
 MPS --> GC[Gejala Klinis:\nNyeri, kekakuan, trigger point,\npenurunan power]
 MPS --> GP[Gangguan performa lari]
 
-%% ====== DRY NEEDLING ======
 GC --> DN[Dry Needling pada MTrP\n→ memicu LTR]
 GP --> DN
 
@@ -45,15 +40,14 @@ LTR2 --> PNS
 PNS --> PB[Latihan terganggu\n(performa & kepatuhan ↓)]
 PNS --> HD[Pemulihan lebih lama]
 
-%% ====== TENS ======
 PB --> TENS_INST[TENS (Intervensi)]
 HD --> TENS_INST
 
 subgraph TM ["Mekanisme TENS"]
-    T1[Gate Control:\naktivasi Aβ → blokade nyeri]
-    T2[Opioid endogen ↑]
-    T3[Sirkulasi lokal ↑ → metabolit dibuang]
-    T4[Penurunan sensitisasi nociceptor]
+  T1[Gate Control:\naktivasi Aβ → blokade nyeri]
+  T2[Opioid endogen ↑]
+  T3[Sirkulasi lokal ↑ → metabolit dibuang]
+  T4[Penurunan sensitisasi nociceptor]
 end
 
 TENS_INST --> T1
